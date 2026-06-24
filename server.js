@@ -40,11 +40,11 @@ app.post("/token", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("LiveKit Token Server Running");
+    res.send("LiveKit Token Server Running");
 });
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log('Server running on ${PORT}');
+    console.log("Server running on " + PORT);
 });
